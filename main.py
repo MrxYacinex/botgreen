@@ -3,14 +3,14 @@ from datetime import datetime, timedelta
 from random import randint, sample
 
 # Start- und Enddatum definieren
-start_date = datetime(2024, 9, 1)
-end_date = datetime(2024, 12, 31)
+start_date = datetime(2023, 3, 1)
+end_date = datetime(2023, 12, 31)
 
 # Alle Tage im Zeitraum berechnen
 total_days = (end_date - start_date).days + 1
 
 # Zufällige Anzahl an Tagen auswählen (ca. 60% der Tage werden genutzt)
-num_commit_days = int(total_days * 0.6)  # 60% der Tage
+num_commit_days = int(total_days * 0.3)  # 60% der Tage
 commit_days = sorted(sample(range(total_days), num_commit_days))
 
 # Datei initialisieren
