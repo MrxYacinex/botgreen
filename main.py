@@ -3,8 +3,8 @@ from datetime import datetime, timedelta
 from random import randint, sample
 
 # Start- und Enddatum definieren
-start_date = datetime(2023, 3, 4)
-end_date = datetime(2025, 2, 19)
+start_date = datetime(2025, 2, 19)
+end_date = datetime(2025, 3, 4)
 
 # Alle Tage im Zeitraum berechnen
 total_days = (end_date - start_date).days + 1
